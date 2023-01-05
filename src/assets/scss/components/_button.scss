@@ -1,0 +1,69 @@
+@use "../abstracts/variables" as var;
+
+button {
+  display: inline-block;
+  margin-right: 32px;
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  font-weight: 700;
+  color: var.$white;
+}
+
+.primary {
+  background-color: var.$button-primary;
+  box-shadow: 0 4px var.$button-primary-shadow;
+
+  &:hover {
+    background-color: var.$button-primary-hover;
+    box-shadow: 0 4px var.$button-primary-hover-shadow;
+  }
+
+  &:active {
+    background-color: var.$button-primary-active;
+  }
+}
+
+.success {
+  background-color: var.$button-success;
+  box-shadow: 0 4px var.$button-success-shadow;
+
+  &:hover {
+    background-color: var.$button-success-hover;
+    box-shadow: 0 4px var.$button-success-hover-shadow;
+  }
+
+  &:active {
+    background-color: var.$button-success-active;
+  }
+}
+
+.warning {
+  background-color: var.$button-warning;
+  box-shadow: 0 4px var.$button-warning-shadow;
+
+  &:hover {
+    background-color: var.$button-warning-hover;
+    box-shadow: 0 4px var.$button-warning-hover-shadow;
+  }
+
+  &:active {
+    background-color: var.$button-warning-active;
+  }
+}
+
+.danger {
+  background-color: var.$button-danger;
+  box-shadow: 0 4px var.$button-danger-shadow;
+
+  &:hover {
+    background-color: var.$button-danger-hover;
+    box-shadow: 0 4px var.$button-danger-hover-shadow;
+  }
+
+  &:active {
+    background-color: var.$button-danger-active;
+  }
+}
