@@ -1,6 +1,6 @@
 # A small game made with Vue.js
 
-Experience it by clicking <a href="https://vue-turn-based-game.vercel.app/" target="_blank">here.</a> 💀
+Experience it by clicking <a href="https://vue-turn-based-game.vercel.app/">here.</a> 💀
 
 ## Project Setup
 
