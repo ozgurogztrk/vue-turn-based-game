@@ -1,4 +1,4 @@
-# A small turn-based game made with Vue.js
+# A small game made with Vue.js
 
 Experience it by clicking <a href="https://vue-turn-based-game.vercel.app/">here.</a> 💀
 
