@@ -1,15 +1,16 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
 
 button {
   display: inline-block;
-  margin-right: 32px;
-  padding: 10px;
-  cursor: pointer;
+  margin-right: fnc.em(32);
+  padding: fnc.em(10);
   border: none;
   border-radius: 8px;
   transition: background-color 0.2s, box-shadow 0.2s;
   font-weight: 700;
   color: var.$white;
+  cursor: pointer;
 }
 
 .primary {

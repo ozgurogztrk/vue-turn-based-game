@@ -1,16 +1,17 @@
 @use "../abstracts/variables" as var;
+@use "../abstracts/functions" as fnc;
 
 .health-bar {
   box-sizing: border-box;
   width: 200px;
   align-items: center;
-  margin-right: 10px;
-  padding: 10px;
+  margin-right: fnc.em(10);
+  padding: fnc.em(10);
   background-color: var.$health-bar-background;
   border-radius: 10px;
 
   & div {
-    padding: 6px 0;
+    padding: fnc.em(6) 0;
     text-align: center;
     font-weight: 700;
     border-radius: 5px;
