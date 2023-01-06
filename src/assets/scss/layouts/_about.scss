@@ -1,5 +1,5 @@
 @use "../abstracts/functions" as fnc;
 
 p {
-  font-size: fnc.toRem(18);
+  font-size: fnc.rem(18);
 }

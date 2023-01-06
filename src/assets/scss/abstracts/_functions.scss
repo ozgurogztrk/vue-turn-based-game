@@ -2,7 +2,7 @@
 * Converting 'px' to 'rem'.
 */
 
-@function toRem($variable) {
+@function rem($variable) {
   $remValue: ($variable / 16) + rem;
   @return $remValue;
 }
