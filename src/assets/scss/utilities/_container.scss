@@ -8,7 +8,7 @@
   margin: fnc.em(10);
   align-items: center;
   padding: fnc.em(16);
-  background-color: #122133;
-  box-shadow: 0 10px #101c2d;
+  background-color: var.$container-background;
+  box-shadow: 0 10px var.$container-shadow;
   border-radius: 10px;
 }
