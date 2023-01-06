@@ -6,3 +6,12 @@
   $remValue: ($variable / 16) + rem;
   @return $remValue;
 }
+
+/**
+* Converting 'px' to 'em'.
+*/
+
+@function em($variable) {
+  $emValue: ($variable / 16) + em;
+  @return $emValue;
+}
