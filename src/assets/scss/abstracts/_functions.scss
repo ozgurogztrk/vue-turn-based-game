@@ -3,7 +3,7 @@
 */
 
 @function rem($variable) {
-  $remValue: ($variable / 16) + rem;
+  $remValue: calc($variable / 16) + rem;
   @return $remValue;
 }
 
@@ -12,6 +12,6 @@
 */
 
 @function em($variable) {
-  $emValue: ($variable / 16) + em;
+  $emValue: calc($variable / 16) + em;
   @return $emValue;
 }
