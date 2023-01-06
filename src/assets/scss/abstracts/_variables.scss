@@ -2,48 +2,48 @@
 * Base
 */
 
-$background-color: #0a1724;
-$white: #ffffff;
+$background-color: hsl(210, 57%, 9%);
+$white: hsl(0, 0%, 100%);
 
 /**
 * Buttons
 */
 
-$button-primary: #2fabfe;
-$button-primary-shadow: #0091f8;
-$button-primary-hover: #0091f8;
-$button-primary-hover-shadow: #0073c2;
-$button-primary-active: #0073c2;
+$button-primary: hsl(204, 99%, 59%);
+$button-primary-shadow: hsl(205, 100%, 49%);
+$button-primary-hover: hsl(205, 100%, 49%);
+$button-primary-hover-shadow: hsl(204, 100%, 38%);
+$button-primary-active: hsl(204, 100%, 38%);
 
-$button-success: #33e192;
-$button-success-shadow: #18b973;
-$button-success-hover: #18ba73;
-$button-success-hover-shadow: #059254;
-$button-success-active: #059254;
+$button-success: hsl(153, 74%, 54%);
+$button-success-shadow: hsl(154, 77%, 41%);
+$button-success-hover: hsl(154, 77%, 41%);
+$button-success-hover-shadow: hsl(154, 93%, 30%);
+$button-success-active: hsl(154, 93%, 30%);
 
-$button-warning: #fac862;
-$button-warning-shadow: #f0af2a;
-$button-warning-hover: #f0af2a;
-$button-warning-hover-shadow: #e49801;
-$button-warning-active: #e49801;
+$button-warning: hsl(40, 94%, 68%);
+$button-warning-shadow: hsl(40, 87%, 55%);
+$button-warning-hover: hsl(40, 87%, 55%);
+$button-warning-hover-shadow: hsl(40, 99%, 45%);
+$button-warning-active: hsl(40, 99%, 45%);
 
-$button-danger: #f47a60;
-$button-danger-shadow: #e54d2d;
-$button-danger-hover: #e54d2d;
-$button-danger-hover-shadow: #d92c07;
-$button-danger-active: #d92c07;
+$button-danger: hsl(11, 87%, 67%);
+$button-danger-shadow: hsl(10, 78%, 54%);
+$button-danger-hover: hsl(10, 78%, 54%);
+$button-danger-hover-shadow: hsl(11, 94%, 44%);
+$button-danger-active: hsl(11, 94%, 44%);
 
 /**
 * Health Bar
 */
 
-$health-bar-background: #101c2d;
-$health-bar-green: #32e092;
-$health-bar-red: #f47a60;
+$health-bar-background: hsl(215, 48%, 12%);
+$health-bar-green: hsl(153, 74%, 54%);
+$health-bar-red: hsl(11, 87%, 67%);
 
 /**
 * Container
 */
 
-$container-background: #122133;
-$container-shadow: #101c2d;
+$container-background: hsl(213, 48%, 14%);
+$container-shadow: hsl(215, 48%, 12%);
