@@ -8,16 +8,14 @@ export default {
 </script>
 
 <template>
-  <div class="container">
-    <div class="flex-center-column">
-      <p>
-        A small game inspired by some of the projects from
-        <strong> Kablosuz Kedi(Gökhan Kandemir)</strong>'s Vue.js course.
-      </p>
-    </div>
+  <div class="container bg-default align-center justify-center">
+    <p>
+      A small game inspired by some of the projects from
+      <strong> Kablosuz Kedi(Gökhan Kandemir)</strong>'s Vue.js course.
+    </p>
   </div>
 
-  <div class="container">
+  <div class="container bg-default align-center justify-center">
     <RouterLink to="/"><Button type="primary" content="Go Back" /></RouterLink>
   </div>
 </template>

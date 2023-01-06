@@ -56,17 +56,12 @@ export default {
 
 <template>
   <main>
-    <div class="container">
-      <div class="flex-center-column">
-        <HealthBar owner="player" :health="playerHealth" title="Player" />
-      </div>
-
-      <div class="flex-center-column">
-        <HealthBar owner="enemy" :health="enemyHealth" title="Enemy" />
-      </div>
+    <div class="container bg-default align-center justify-center">
+      <HealthBar owner="player" :health="playerHealth" title="Player" />
+      <HealthBar owner="enemy" :health="enemyHealth" title="Enemy" />
     </div>
 
-    <div class="container">
+    <div class="container bg-default gap-column align-center justify-center">
       <Button
         type="primary"
         content="Play"
@@ -77,7 +72,10 @@ export default {
         <Button type="primary" content="About" v-show="!showButtonGroup"
       /></RouterLink>
 
-      <div v-show="showButtonGroup">
+      <div
+        class="container align-center justify-center gap w-100"
+        v-show="showButtonGroup"
+      >
         <Button type="primary" content="Attack" @on-click="attack(5, 20)" />
         <Button
           type="warning"
