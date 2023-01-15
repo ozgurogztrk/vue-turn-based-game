@@ -14,7 +14,7 @@ export default {
     >
       <p>
         A small game inspired by some of the projects from
-        <strong> Kablosuz Kedi(Gökhan Kandemir)</strong>'s Vue.js course.
+        <strong> Kablosuz Kedi</strong>'s Vue.js course.
       </p>
     </div>
 
