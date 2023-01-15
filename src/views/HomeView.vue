@@ -16,6 +16,7 @@ export default {
       showButtonGroup: false,
       playerHealth: 100,
       enemyHealth: 100,
+      buttonDisabled: false,
     };
   },
 
@@ -25,14 +26,24 @@ export default {
     },
 
     attack(minDamage: number, maxDamage: number) {
+      this.buttonDisabled = true;
       this.enemyHealth -= Math.floor(Math.random() * maxDamage + minDamage);
-      this.playerHealth -= Math.floor(Math.random() * 20 + 5);
-      this.gameState();
+
+      setTimeout(() => {
+        this.buttonDisabled = false;
+        this.playerHealth -= Math.floor(Math.random() * 20 + 5);
+        this.gameState();
+      }, 1000);
     },
 
     heal() {
+      this.buttonDisabled = true;
       this.playerHealth = 100;
-      this.playerHealth -= Math.floor(Math.random() * 20 + 5);
+
+      setTimeout(() => {
+        this.buttonDisabled = false;
+        this.playerHealth -= Math.floor(Math.random() * 25 + 10);
+      }, 1000);
     },
 
     gameState() {
@@ -76,14 +87,30 @@ export default {
         class="flex flex-wrap align-center justify-center gap w-100"
         v-show="showButtonGroup"
       >
-        <Button type="primary" content="Attack" @on-click="attack(5, 20)" />
+        <Button
+          type="primary"
+          content="Attack"
+          @on-click="attack(5, 20)"
+          :isDisabled="buttonDisabled"
+        />
         <Button
           type="warning"
           content="Special Ability"
           @on-click="attack(10, 30)"
+          :isDisabled="buttonDisabled"
         />
-        <Button type="success" content="Heal" @on-click="heal()" />
-        <Button type="danger" content="Quit" @on-click="quit()" />
+        <Button
+          type="success"
+          content="Heal"
+          @on-click="heal()"
+          :isDisabled="buttonDisabled"
+        />
+        <Button
+          type="danger"
+          content="Quit"
+          @on-click="quit()"
+          :isDisabled="buttonDisabled"
+        />
       </div>
     </div>
   </main>

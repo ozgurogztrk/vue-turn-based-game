@@ -9,6 +9,12 @@ export default {
       type: String,
       required: true,
     },
+
+    isDisabled: {
+      type: Boolean,
+      default: false,
+      required: false,
+    },
   },
 
   methods: {
@@ -20,7 +26,9 @@ export default {
 </script>
 
 <template>
-  <button :class="type" @click="onClick()">{{ content }}</button>
+  <button :class="type" @click="onClick()" :disabled="isDisabled">
+    {{ content }}
+  </button>
 </template>
 
 <style scoped lang="scss">
