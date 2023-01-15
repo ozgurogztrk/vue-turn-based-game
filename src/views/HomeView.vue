@@ -32,8 +32,9 @@ export default {
       setTimeout(() => {
         this.buttonDisabled = false;
         this.playerHealth -= Math.floor(Math.random() * 20 + 5);
-        this.gameState();
       }, 1000);
+
+      this.gameState();
     },
 
     heal() {
