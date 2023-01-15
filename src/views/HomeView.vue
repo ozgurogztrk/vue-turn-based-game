@@ -55,13 +55,13 @@ export default {
 </script>
 
 <template>
-  <main>
-    <div class="container bg-default align-center justify-center">
+  <main class="flex flex-column align-center justify-center">
+    <div class="flex flex-wrap align-center justify-center card card-main">
       <HealthBar owner="player" :health="playerHealth" title="Player" />
       <HealthBar owner="enemy" :health="enemyHealth" title="Enemy" />
     </div>
 
-    <div class="container bg-default gap-column align-center justify-center">
+    <div class="flex flex-wrap gap-column align-center justify-center card">
       <Button
         type="primary"
         content="Play"
@@ -73,7 +73,7 @@ export default {
       /></RouterLink>
 
       <div
-        class="container align-center justify-center gap w-100"
+        class="flex flex-wrap align-center justify-center gap w-100"
         v-show="showButtonGroup"
       >
         <Button type="primary" content="Attack" @on-click="attack(5, 20)" />
